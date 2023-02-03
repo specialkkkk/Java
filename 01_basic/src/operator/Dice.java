@@ -7,16 +7,26 @@ public class Dice {
 		
 		
 		
-		
 				
 		dice1 = (int)(Math.random () * 6+1); 
 		dice2 = (int)(Math.random () * 6+1);
 		
 		String result = dice1 > dice2 ?  "주사위1 승 " : (dice1 == dice2) ? "무승부" : "주사위2 승";  
-		
-		
+		/// 조건 ? 참 : 거짓
+		/// 조건 ? 참 : 조건 ? 참 : 거짓      <ㅡ 이렇게 써도 된다.
 		
 		System.out.println("주사위1:" + dice1+ "\t" + "주사위2:" + dice2 + "\n" + result );
+		
+		
+		
+		//
+		//String result = dice 1 > dice2 ? "주사위1 승" : dice1 < dice2 ? "주사위2 승" : "무승부";
+		//System.out.println(result);
+		//선생님 답
+		
+		
+		
+		
 		
 
 	}

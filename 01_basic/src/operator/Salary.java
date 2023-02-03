@@ -7,10 +7,12 @@ public class Salary {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("이름을 입력하시오 :  ");
-		String name = scan.nextLine();
+		System.out.print("이름을 입력하시오 :  "); // println하면 밑줄에 써지고 print하면 옆에다 써짐
+		String name = scan.nextLine();            //   print★ln★("직급을 입력하시오:");
+		                                         //ex) 직급을 입력하시오 :  
+												//     대리
 		
-		
+
 		System.out.print("직급을 입력하시오 :  ");
 		String jik = scan.nextLine();
 		
@@ -31,8 +33,11 @@ public class Salary {
 		
 	
 		double wol = tot - tax;
+		
+		
+		
 		DecimalFormat abc = new DecimalFormat();
-		System.out.println("***"+name+jik+"월급 ***");
+		System.out.println("***" + name + " " + jik + "월급 ***");
 		System.out.println("기본급 :" + abc.format(ki) + "원");
 		System.out.println("수당 :" + abc.format(su) + "원");
 		System.out.println("합계 :" + abc.format(tot) + "원");
@@ -66,5 +71,25 @@ public class Salary {
 합계 : 5,100,000원
 세금 : 153,000원
 월급 : 4,947,000원
+ */
+
+
+
+/*
+String name, position;
+int baspay, extrapay, total, tax, salary;
+double taxRate;
+
+
+sysout 이름 직급 기본급 수당
+
+total = basePay + extrapay;
+taxRate = total>=5000000 ? 0.03 : total>=3000000 ? 0.02 : 0.01;
+tax = total * taxRate; // 실수와 정수형으로 하면 계산x 
+=> tax = (int)total * taxRate; // (int) = 정수형으로 바꾸어라
+salary = total - tax;
+
+
+
  */
  
