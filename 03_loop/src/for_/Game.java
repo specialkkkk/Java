@@ -24,7 +24,7 @@ public class Game {
 			
 			for(int j=1;j<4;j++) {
 				if(user==j)
-					if(com==(j-1==0 ? j=3 : j-1)) {
+					if(com==(j-1==0 ? j+2 : j-1)) {
 						System.out.println("You Win!!");
 					}else if(com==j) {
 						System.out.println("You Draw!!");

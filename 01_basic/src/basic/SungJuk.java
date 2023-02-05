@@ -11,7 +11,8 @@ public class SungJuk {
 		int eng = 78;
 		int math = 100;
 		int tot = kor + eng + math;
-		double avg = tot / 3d ;
+		double avg = tot / 3d ;    // 3까지만 쓸 경우 결과 87.0 (소수점이 없다)  3d(double)로 써서 소수점을 나타내자
+		
 		
 		System.out.println("\t*** " + name +" 성적표 ***");
 		System.out.println("국어\t영어\t수학\t총점\t평균");

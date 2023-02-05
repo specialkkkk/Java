@@ -3,7 +3,7 @@ package for_;
 public class For05 {
 
 	public static void main(String[] args) {
-		int count;
+		int count; 
 		for(int i=0; i<10; i++) {
 			for(int j=0; j<10; j++) {
 				int num = (int)(Math.random() * (90-65+1)+65) ;
@@ -11,7 +11,14 @@ public class For05 {
 			}//for(j)
 		}//for(i)  여기까지하면 알파벳 100개가 한줄에 나옴
 		
-		
+//		int[] ar = new int[10]; //배열  ,정수형 변수
+//		ar[0] = 25;
+//		ar[1] = 13;
+//		ar[2] = 45;
+//		ar[3] = 30;
+//		ar[4] = 15;
+//		System.out.println(ar[0]+", " + ar[1] + ", " + ar[2] + ", " + ar[3] + ", " + ar[4] );
+//		
 
 	}
 

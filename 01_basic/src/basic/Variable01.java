@@ -7,13 +7,17 @@ public class Variable01 {
 		System.out.println(Long.MIN_VALUE + "," + Long.MAX_VALUE);
 		System.out.println();
 		
-		boolean a;
+		boolean a;  //boolean 자료형 : true (참), false (거짓)으로 구성. ※ 오직 2개 값 중 선택할 때 사용. (예) 예 / 아니오
 		a = 25 > 36;
-		System.out.println("a = " + a);
+		System.out.println("a = " + a); //결과 a = false    25가 더 작으니 거짓이라고 뜬다.
 		
 		char b;
-		b = 'A'; //65, 0100 0001
+		b = 'A'; // A의 기본값은 65,  0100 0001    /  char를 써서 문자로 썼기때문에 결과는  b = A
+												// int를 썼다면 결과는 b = 65
 		System.out.println("b = " + b);
+		
+		
+		
 		
 		char c;
 		c = 65;	// 아스키 코드 65 = 'A'
