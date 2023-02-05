@@ -13,7 +13,7 @@ public class Money {
 		money = scan.nextInt();
 		
 		int thousand = money / 1000; //5 
-		int thousand_mod = money % 1000; //378
+		int thousand_mod = money % 1000; //378   /  ★ % = 나머지를 구함
 		
 		int hundred = thousand_mod / 100; //3
 		int hundred_mod = thousand_mod % 100; //78
@@ -21,7 +21,7 @@ public class Money {
 		int ten = hundred_mod / 10; //7
 		int one = hundred_mod % 10; //8
 		
-		DecimalFormat abc = new DecimalFormat();
+		DecimalFormat abc = new DecimalFormat(); //3자리마다 쉼표 찍기
 		System.out.println("현금 = " + abc.format(money) + "원"); //3자리마다 쉼표 찍기
 		System.out.println("천원 = " + thousand + "장");
 		

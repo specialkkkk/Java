@@ -1,6 +1,6 @@
 package for_;
 
-public class Memo {
+public class Game_Memo {
 
 	public static void main(String[] args) {
 //		가위 -1 바위 -2 보 -3 
