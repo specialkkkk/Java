@@ -17,7 +17,8 @@ public class For05 {
 			}//for(j)
 		}//for(i)  여기까지하면 알파벳 100개가 한줄에 나옴
 			   
-		      
+	
+       
 
 		
 

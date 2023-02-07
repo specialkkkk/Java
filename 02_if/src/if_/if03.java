@@ -21,17 +21,17 @@ public class if03 {
 	    
 	    
 	    if(a<b && a<c) { //a가 가장 작은 경우
-	    	if(b<c) System.out.println(a + ", " + b + ", " + c);
-	    	else System.out.println(a + " , " + c + ", " + b);
+	    	if(b<c) System.out.println(a + ", " + b + ", " + c); //b가 그다음으로(2번째) 작은경우
+	    	else System.out.println(a + " , " + c + ", " + b); // => 그게아니라면 (c가 다음으로(2번째로) 작은경우)
+	    	// 작은거 부터 순서대로 프린트하기 위해 a b c 의 위치변경
 	    	
-//	    	
-//	    	//위의 a가 가장 작습니까 하고 내려왔다 그다음 (b<a)를 쓸 필요 X 
-//	    }else if(b<c) { //b가 가장 작은 경우
-//	    	if(a<c) System.out.println(b + ", " + a + ", " + c);
-//	    	else System.out.println(b + ", " + c + ", " + a);
-//	    }else { // c가 가장 작은 경우
-//	    	if(a<b) System.out.println(c + ", " + a + ", " + b);
-//	    	else System.out.println(c + ", " + b + ", " + a);
+	    	//위의 a가 가장 작습니까 하고 내려왔다 그다음 (b<a)를 쓸 필요 X 
+	    }else if(b<c) { //b가 가장 작은 경우
+	    	if(a<c) System.out.println(b + ", " + a + ", " + c);
+	    	else System.out.println(b + ", " + c + ", " + a);
+	    }else { // c가 가장 작은 경우
+	    	if(a<b) System.out.println(c + ", " + a + ", " + b);
+	    	else System.out.println(c + ", " + b + ", " + a);
 	    }
 	    
 	}

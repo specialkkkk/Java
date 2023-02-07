@@ -10,10 +10,9 @@ public class AddGame {
 		int a, b, dab, count=0;
 		// count=0을 해서 초기화해야 에러가 안뜬다 
 		
-		for(int i=1; i<=5; i++) {
+		for(int i=1; i<=5; i++) { //5문제
 			
-			
-			
+					
 			
 			
 		
@@ -23,7 +22,8 @@ public class AddGame {
 		
 		//a = (int)(Math.random() * 90 + 10); //10 ~ 99 선생님 답
 		//b = (int)(Math.random() * 90 + 10);
-		
+		 
+				for(int j=1; j<=2; j++) { // 틀리면 기회를 1번 더
 		
 		System.out.print(" ["+ i +"] " + a + "+" + b + " = ");
 		dab = scan.nextInt(); //dab = Scanner로 입력 받는다.
@@ -32,11 +32,15 @@ public class AddGame {
 		
 		if(a+b == dab ){//if(입력한 답 == 정답) 
 			System.out.println("참 잘했어요"); 
-			count++;} // count를 넣었으니 {}로 구역을 잡아줘야함
-		else System.out.println("틀렸다");
-		
-		
-		
+			count++; // count를 넣었으니 {}로 구역을 잡아줘야함
+			break; // for j를 벗어나라
+				}
+		else 
+			if(j == 1) System.out.println("틀렸다");
+			else if(j == 2) System.out.println("틀렸다 정답은 "+ (a+b));
+				}//for j
+				
+	
 		} //for     1문제를 for로 감싸서 5번 주면 =5문제....
 		System.out.println();
 		System.out.println("당신은 총 " + count + "문제를 맞혀서 점수 "+ count *20 + "점 입니다.");

@@ -13,5 +13,5 @@ public class For06_test {
 			result *=x;
 		}System.out.println(i+"! = "+result);
 
-}
+	}
 }
