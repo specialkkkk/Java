@@ -32,10 +32,12 @@ public class MultiArray03 {
 					   
 		for(int i=0; i<jumsu.length; i++) { // i<3 = i<jumsu.length  그런데 총점이 빠져있으니 -1
 	       
-	        for(int j=0; j<jumsu.length-1; j++) {
+	        for(int j=0; j<jumsu[i].length-1; j++) {
 	        	
 	         jumsu[i][3] += jumsu[i][j]; // 총점//jumsu[i][j] 배열의 각 요소의 합을 누적하여 jumsu[i][3]에 저장
-	        }
+	        } // for j
+	        
+	       
 	        
 	        avg[i] = (double) jumsu[i][3]  / 3; //평균
 	        if(avg[i] >= 90) grade[i] = 'A'; //만약 평균이 90이상이면 학점은 A
@@ -43,7 +45,10 @@ public class MultiArray03 {
 	        else if(avg[i] >= 70) grade[i] = 'C'; //그게아니고 70 ''
 	        else if(avg[i] >= 60) grade[i] = 'D';//  60 ''
 	        else grade[i] = 'F';
-	    }
+	    } //for i
+		
+		
+		
 		
 		
 		//출력  ( 첫번째줄부터 가로로 출력하면서 내려가야함) 세로로 찍으면 수정불가

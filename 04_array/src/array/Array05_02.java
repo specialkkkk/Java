@@ -4,7 +4,7 @@ public class Array05_02 {
 
 	public static void main(String[] args) {
 		char[] ar = new char[50]; //50개의 방을 만듬
-		int[] count = new int[26];// A~Z
+		int[] count = new int[26];// A~Z까지 카운트
 		
 		
 				
