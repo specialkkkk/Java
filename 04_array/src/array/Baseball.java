@@ -1,11 +1,55 @@
 package array;
 
+import java.util.Scanner;
+
 public class Baseball {
 
 	public static void main(String[] args) {
-		int[] com = new int[3];  //방 3개씩 만듬
+		Scanner scan = new Scanner(System.in);
+		int[] com = new int[3];
 		int[] user = new int[3];
 		
+		int strike=0, ball=0;
+		
+		
+			System.out.print("게임을 실행하시겠습니까(Y/N) : ");
+			String yn = scan.next();
+			
+			if(yn.equals("y") || yn.equals("Y")); { 
+				System.out.println("게임을 시작합니다");
+				for(int i=0; i<com.length; i++) {
+					com[i] = (int)(Math.random()*9+1);
+					for(int j=0; j<i; j++) {
+						if(com[i] == com[j]) {i--; break;}// 중복 체크
+					}
+				}
+			}
+			System.out.println();
+			
+			// 반복
+			while(true) { //while 1
+				for(int i=0; i<com.length;i++)System.out.print(com[i]);
+				
+				System.out.print("숫자 입력 : ");
+				for(int i=0; i<user.length;i++) {
+					
+					user[i] = scan.nextInt();
+				}
+				
+				for(int i=0; i<com.length;i++) {
+					for(int j=0;j<user.length;j++) {
+						if(com[i]==user[j]) {
+							if(i!=j)ball++;
+						}
+						if((i==j) && (com[i]==user[j]))strike++;
+					}
+				}
+				
+				System.out.println(strike + "스트라이크 " + ball + "볼");
+				
+				
+			} //while 1
+
 
 	}
 
