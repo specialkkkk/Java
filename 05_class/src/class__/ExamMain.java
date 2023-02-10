@@ -3,12 +3,20 @@ package class__;
 import java.util.Scanner;
 
 
-public class Exam_Main {
+public class ExamMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("인원수 입력 : ");
-        int n = sc.nextInt();
-     
+        int cnt = sc.nextInt();
+        
+        System.out.print("이름 입력 : ");
+        int name = sc.nextInt();
+        
+        System.out.print("답 입력 : ");
+        int dap = sc.nextInt();
+        
+        
+    }
 }
 /*
 [문제] 사지선다형
