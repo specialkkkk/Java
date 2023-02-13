@@ -14,8 +14,8 @@ public class ChildMain extends Super {
 		
 		this.name = name;
 		this.age = age;
-		super.weight = weight; 
-		this.height = height;
+		//super.weight = weight; 
+		//this.height = height;
 		//this 는 내 값  super는 부모클래스의 참조 값
 	
 	}
@@ -37,8 +37,8 @@ public class ChildMain extends Super {
 		aa.disp();
 		System.out.println("=============");
 		
-		Super bb = new Childmain("코난",13,63.5,162.6 );
-		
+		Super bb = new ChildMain("코난",13,63.5,162.6 );
+		bb.disp();
 		
 		
 	}

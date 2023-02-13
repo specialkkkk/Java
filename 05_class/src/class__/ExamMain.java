@@ -9,13 +9,74 @@ public class ExamMain {
         System.out.print("인원수 입력 : ");
         int cnt = sc.nextInt();
         
-        System.out.print("이름 입력 : ");
-        int name = sc.nextInt();
-        
-        System.out.print("답 입력 : ");
-        int dap = sc.nextInt();
         
         
+        //객체배열
+        Exam[] ar = new Exam[cnt];
+        
+        
+        //입력
+        for(int k=0; k<ar.length; k++) {
+        	ar[k] = new Exam();
+        	ar[k].compare();
+        	System.out.println();
+        }//for k
+        
+        
+        
+        //출력
+//        for(int k=0; k<ar.length; k++) {
+         for(Exam e : ar) { //ar[0]을 e로바꿈
+        	 System.out.println();
+             System.out.println("이름 \t 1 2 3 4 5 \t 점수");
+             System.out.println(e.getName()+ "\t");
+             for(int i=0; i<e.getOx().length; i++) {
+             	System.out.print(e.getOx()[i] + " ");
+             }//for i
+             System.out.println("\t" + e.getScore());  
+        	 
+        }
+        
+        
+         
+         
+         
+         
+         /*    
+        ar[0] = new Exam();
+        ar[1] = new Exam();
+        
+         
+        
+        ar[0].compare();
+//        System.out.println(aa.getName() + "\t" + aa.getOx()[0~4] + " "  // aa.getOx()[0~4]를 for문 돌리자
+//        + "\t"	+ aa.getScore());
+        
+        System.out.println();
+        System.out.println("이름 \t 1 2 3 4 5 \t 점수");
+        System.out.println(ar[0].getName()+ "\t");
+        for(int i=0; i<ar[0].getOx().length; i++) {
+        	System.out.print(ar[0].getOx()[i] + " ");
+        }//for i
+        System.out.println("\t" + ar[0].getScore());
+        
+        
+        
+        Exam bb= new Exam();
+        bb.compare();
+        
+        System.out.println();
+        System.out.println("이름 \t 1 2 3 4 5 \t 점수");
+        System.out.println(bb.getName()+ "\t");
+        for(int i=0; i<bb.getOx().length; i++) {
+        	System.out.print(bb.getOx()[i] + " ");
+        }//for i
+        System.out.println("\t" + bb.getScore());
+         
+ */
+        
+         
+         
     }
 }
 /*
