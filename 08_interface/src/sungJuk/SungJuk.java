@@ -1,7 +1,5 @@
 package sungJuk;
 
 public interface SungJuk {
-	public void execute();
-	
-	
+	public void execute(~~?)
 }

@@ -39,7 +39,7 @@ public class SungJukService {
 				continue; // 다시 첨부터 시작 (while부터)
 			}
 			
-			sungJuk.execute();  //호출
+			sungJuk.execute(arrayList);  //호출
 		}//while
 	
 		

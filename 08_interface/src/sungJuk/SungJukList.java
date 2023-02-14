@@ -1,9 +1,11 @@
 package sungJuk;
 
+import java.util.ArrayList;
+
 public class SungJukList implements SungJuk{
 
-	@Override
-	public void execute() {
+	
+	public void execute(ArrayList<SungJukDTO> arrayList) {
 		System.out.println();
 		System.out.println("출력");
 		

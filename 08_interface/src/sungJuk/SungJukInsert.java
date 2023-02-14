@@ -1,11 +1,11 @@
 package sungJuk;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SungJukInsert implements SungJuk{
 
-	@Override
-	public void execute() {
+	public void execute(ArrayList<SungJukDTO>arrayList) {
 		System.out.println();
 		Scanner scan = new Scanner(System.in);
 		
@@ -24,7 +24,7 @@ public class SungJukInsert implements SungJuk{
 		SungJukDTO sungJukDTO = new SungJukDTO(no, name, kor, eng, math);
 		sungJukDTO.calc();
 		
-		arrayList.add(sungJukDTO);
+		arrayList.add(sungJukDTO); //크기가 가변적인 배열을 구현한 클래스
 		
 	}
 }
