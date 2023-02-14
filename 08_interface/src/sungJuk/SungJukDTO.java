@@ -59,5 +59,10 @@ public class SungJukDTO {
 	}
 	public void setAvg(double avg) {
 		this.avg = avg;
+		
+		@Override
+		public String toString() {
+			return no+"\t+name+\t+kor"\t"+eng+"\t"+math+"\t" "
+		}
 	}
 }

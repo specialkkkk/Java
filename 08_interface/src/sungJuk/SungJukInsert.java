@@ -26,5 +26,7 @@ public class SungJukInsert implements SungJuk{
 		
 		arrayList.add(sungJukDTO); //크기가 가변적인 배열을 구현한 클래스
 		
+		System.out.println("입력하였습니다");
+		
 	}
 }
