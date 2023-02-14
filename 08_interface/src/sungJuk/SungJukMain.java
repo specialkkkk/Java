@@ -30,7 +30,7 @@ Class     : SungJukDTO.java - 1인분
             SungJukService.java - menu() 작성
             SungJukMain.java
 
-[조건] ★ 시험볼때 이런식으로 나올수도?
+[조건] ★ 시험볼때 이런식으로 나올수도? ★
 1. SungJukDTO.java
 필드 : 번호(중복X), 이름, 국어, 영어, 수학, 총점, 평균
 메소드 : 생성자를 이용하여 데이터 얻기
