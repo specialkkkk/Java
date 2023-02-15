@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class SungJukInsert implements SungJuk{
-
+	@Override
 	public void execute(ArrayList<SungJukDTO>arrayList) {
 		System.out.println();
 		Scanner scan = new Scanner(System.in);

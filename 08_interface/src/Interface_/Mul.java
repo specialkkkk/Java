@@ -2,24 +2,24 @@ package Interface_;
 
 import java.util.Scanner;
 
-public class Mul implements Compute{
+public class Mul implements Compute {
+
 private int x, y;
 	
+	
 	public Mul() {
-		Scanner scan = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("x의 값 입력 : ");
-		x = scan.nextInt();
+		x = sc.nextInt();
 		System.out.println("y의 값 입력 : ");
-		y = scan.nextInt();
+		y = sc.nextInt();
 	}
 	
 	
 	@Override
 	public void disp() {
-		System.out.println(x + " * " + y + " =" + (x*y));
-		
-	}
-}
+		System.out.println(x + " * " + y + " = "+(x*y));
 
+	}
 }

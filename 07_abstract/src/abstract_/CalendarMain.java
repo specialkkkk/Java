@@ -6,6 +6,7 @@ import java.util.Scanner;
 class CalendarEx {
     private int year;
     private int month;
+    private int week;
 
     public CalendarEx(int year, int month) {
         this.year = year;
@@ -22,7 +23,12 @@ class CalendarEx {
 
     public int calc() {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(year, month-1, 1);
+        
+     // 생성할 때 기준인 시스템 날짜, 시간을 내가 원하는 날짜와 시간으로 변경 해야함
+        //cal.set(Calendar.YEAR, this.year); //년도
+        //cal.set(Calendar.MONTH, this.month-1);//월
+        //cal.set(Calendar.DAY_OF_MONTH, 1); //일
+        calendar.set(year, month-1, 1);// 연, 월, 일
         return calendar.get(Calendar.DAY_OF_WEEK);
     }
 
@@ -39,11 +45,11 @@ class CalendarEx {
         int startDay = calc();
         int lastDay = lastDay();
 
-        for (int i = 1; i < startDay; i++) {
+        for (int i = 1; i < startDay; i++) {//시작점 잡기
             System.out.print("     ");
         }
 
-        for (int i = 1; i <= lastDay; i++) {
+        for (int i = 1; i <= lastDay; i++) { //1월부터 lastdayㅏㄲ지
             System.out.printf("%2d   ", i);
 
             if ((i + startDay - 1) % 7 == 0) {
