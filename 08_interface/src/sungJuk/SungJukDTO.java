@@ -1,12 +1,18 @@
 package sungJuk;
+//1. SungJukDTO.java
+//필드 : 번호(중복X), 이름, 국어, 영어, 수학, 총점, 평균
+//메소드 : 생성자를 이용하여 데이터 얻기
+//       setter / getter
+//       calc - 총점, 평균하는 계산
 
-public class SungJukDTO { //1인분
+public class SungJukDTO { //1인분 
+	//필드
 	private int no;
 	private String name;
 	private int kor, eng, math, tot;
 	private double avg;
 	
-	public SungJukDTO(int no, String name, int kor, int eng, int math) {
+	public SungJukDTO(int no, String name, int kor, int eng, int math) { //메소드
 		//생성자
 		this.no = no;
 		this.name = name;

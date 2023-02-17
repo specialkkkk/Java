@@ -29,11 +29,12 @@ public class SungJukService {
 			
 			if(num == 6 )break;
 			
+//			SungJukInsert sungjukinsert = new Sung
 			if(num == 1) sungJuk = new SungJukInsert();
 			else if (num == 2) sungJuk = new SungJukList();
-			else if (num == 3);
-			else if (num == 4);
-			else if (num == 5);
+			else if (num == 3) sungJuk = new SungJukUpdate(); 
+			else if (num == 4) sungJuk = new SungJukDelete();
+			else if (num == 5) sungJuk = new SungJukSort();
 			else {
 				System.out.println("1~6 번 까지만 입력하세요"); 
 				continue; // 다시 첨부터 시작 (while부터)

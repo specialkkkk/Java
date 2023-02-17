@@ -49,7 +49,7 @@ class CalendarEx {
             System.out.print("     ");
         }
 
-        for (int i = 1; i <= lastDay; i++) { //1월부터 lastdayㅏㄲ지
+        for (int i = 1; i <= lastDay; i++) { //1월부터 lastday까지
             System.out.printf("%2d   ", i);
 
             if ((i + startDay - 1) % 7 == 0) {
