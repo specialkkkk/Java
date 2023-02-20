@@ -31,7 +31,7 @@ public class MemberFileInput implements Member {
 			}
 			
 			ois.close();
-			System.out.println("파일에 읽기 완료");
+			System.out.println("파일에 읽기(불러오기) 완료");
 			
 			
 		} catch (IOException e) {

@@ -31,3 +31,23 @@ public class MemberPhoneSearch implements Member { // Member 인터페이스를 
 }
 
 
+
+
+/*
+int sw=0;
+for(MemberDTO memberDTO : list ) {
+	if(MemberDTO.getPhone().equals(phone))	{
+		System.out.println("이름\t나이\t핸드폰\t주소");
+		System.out.println(memberDTO);
+		sw=1;
+		
+		break;
+	}
+}//for
+
+if(sw == 0)
+	System.out.println("검색한 핸드폰 번호가 없습니다");
+	
+	}
+}
+*/

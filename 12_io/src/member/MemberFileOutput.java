@@ -21,6 +21,7 @@ public class MemberFileOutput implements Member {
 			}
 			
 			oos.close();
+			System.out.println("파일에 저장 완료");
 			
 			
 		} catch (IOException e) {
